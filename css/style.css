@@ -56,8 +56,19 @@ body{
   justify-content: center;
   align-items: center;
 }
+.contTextInfo3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contTextInfo2 p {
   margin-left: 25px;
+}
+.contTextInfo3 p {
+  margin-left: 25px;
+}
+#img1938 {
+  width: 250px;
 }
 
 .cd-horizontal-timeline ol, .cd-horizontal-timeline ul {
