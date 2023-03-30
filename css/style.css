@@ -32,6 +32,9 @@ body{
   align-items: center;
   flex-direction: column;
 }
+.contTittleImg h4 {
+  margin-top: 35px;
+}
 .contTittleImg img {
   width: 150px;
   margin-right: 10px;
