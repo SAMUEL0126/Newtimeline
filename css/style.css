@@ -32,6 +32,26 @@ body{
   align-items: center;
   flex-direction: column;
 }
+.contTittleImg4 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+.contTittleImg4 img {
+  width: 150px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-right: 35px;
+}
+.contTittleImg4 h4 {
+  margin-top: 35px;
+  margin-right: 20px;
+}
 .contTittleImg h4 {
   margin-top: 35px;
 }
@@ -61,13 +81,29 @@ body{
   justify-content: center;
   align-items: center;
 }
+.contTextInfo4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contTextInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contTextInfo2 p {
   margin-left: 25px;
 }
 .contTextInfo3 p {
   margin-left: 25px;
 }
+.contTextInfo4 p {
+  margin-left: 25px;
+}
 #img1938 {
+  width: 250px;
+}
+#img1940 {
   width: 250px;
 }
 
