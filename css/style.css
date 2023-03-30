@@ -521,3 +521,23 @@ body{
     margin-left: -1.5px;
     background-color: #eeeeee;
 }
+
+
+ol {
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pruebasisas {
+  width: 20%; height: 100%; 
+  position: absolute;
+  transform: translate(-500px, 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 300px;
+}
