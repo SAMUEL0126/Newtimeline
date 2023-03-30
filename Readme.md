@@ -1,3 +1,3 @@
-<h2>Interfaz final de page winner.</h2>
+<h2>Interfaz principal del index.</h2>
 <hr></hr>
 <img src="/images/CaptureA.PNG" alt="...">
