@@ -19,7 +19,7 @@ body{
 }
 
 #OptionOne {
-  background-color: rgb(173, 171, 171);
+  background-color: rgb(207, 204, 204);
   width: 45%;
   border-radius: 15px;
   display: flex;
@@ -41,11 +41,22 @@ body{
   margin-bottom: 15px;
   border-radius: 10px;
 }
+.contTittleImg #img1928 {
+  width: 250px;
+}
 .contTextInfo {
   width: 50%;
   height: auto;
   text-align: center;
   padding-left: 25px;
+}
+.contTextInfo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contTextInfo2 p {
+  margin-left: 25px;
 }
 
 .cd-horizontal-timeline ol, .cd-horizontal-timeline ul {
