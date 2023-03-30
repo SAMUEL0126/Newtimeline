@@ -14,10 +14,29 @@ body{
   height: auto;
 }
 
-#prubaOptionOne {
+#OptionOne {
   background-color: rgb(97, 97, 97);
   width: 45%;
   border-radius: 15px;
+  display: flex;
+}
+.contTittleImg {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contTittleImg img {
+  width: 150px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.contTextInfo {
+  width: 50%;
+  height: auto;
+  text-align: center;
 }
 
 .cd-horizontal-timeline ol, .cd-horizontal-timeline ul {
