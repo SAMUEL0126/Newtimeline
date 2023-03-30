@@ -49,6 +49,7 @@ body{
   height: auto;
   text-align: center;
   padding-left: 25px;
+  align-items: center;
 }
 .contTextInfo2 {
   display: flex;
