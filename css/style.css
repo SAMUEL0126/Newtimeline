@@ -1,3 +1,7 @@
+* {
+  font-family: 'Tillana';
+  /* font-size: 22px; */
+}
 body{
     margin-top:20px;
     background:#eee;
@@ -15,7 +19,7 @@ body{
 }
 
 #OptionOne {
-  background-color: rgb(97, 97, 97);
+  background-color: rgb(173, 171, 171);
   width: 45%;
   border-radius: 15px;
   display: flex;
@@ -31,12 +35,14 @@ body{
 .contTittleImg img {
   width: 150px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
 .contTextInfo {
   width: 50%;
   height: auto;
   text-align: center;
+  padding-left: 25px;
 }
 
 .cd-horizontal-timeline ol, .cd-horizontal-timeline ul {
