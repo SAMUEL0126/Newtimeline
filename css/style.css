@@ -2,8 +2,23 @@ body{
     margin-top:20px;
     background:#eee;
 }
+.events-content{
+  display: flex; justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.events-content ol {
+  display: flex; justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
 
-
+#prubaOptionOne {
+  background-color: rgb(97, 97, 97);
+  width: 45%;
+  border-radius: 15px;
+}
 
 .cd-horizontal-timeline ol, .cd-horizontal-timeline ul {
   list-style: none;
