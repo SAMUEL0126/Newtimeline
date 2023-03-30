@@ -153,7 +153,7 @@ body{
   width: 12px;
   border-radius: 50%;
   border: 2px solid #dfdfdf;
-  background-color: #f8f8f8;
+  background-color: lime;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
   -moz-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
