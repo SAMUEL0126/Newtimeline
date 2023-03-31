@@ -5,9 +5,57 @@ a {
   text-decoration: none;
 }
 body{
-    margin-top:20px;
-    background:#eee;
+    /* margin-top:20px; */
+    /* position: relative; */
+    height: calc(100vh, 50px);
+    background-color: #f5f5f5;
+    background-position: center;
+    background-size: cover;
+    transition: all .1s ease-in-out;
+    background-image: url('/images/cultural/haciendaFriaCafe.jpg');
+    animation: body 40s infinite linear;
 }
+.lentDark {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 1348px;
+  height: 143vh;
+  position: absolute;
+  /* color: white; */
+  background-color: rgba(0, 22, 40, .6);
+}
+
+
+@keyframes body {
+  0% {
+    background-image: url('/images/cultural/barrioCafetero.jpg');
+  }
+  25% {
+    background-image: url('/images/cultural/corredorCafetero.jpg');
+  }
+  26% {
+    background-image: url('/images/cultural/patrimonio.jpg');
+  }
+  50% {
+    background-image: url('/images/cultural/ventanasHacienda.jpg');
+  }
+  51% {
+    background-image: url('/images/cultural/barrioCafetero.jpg');
+  }
+  75% {
+    background-image: url('/images/cultural/corredorCafetero.jpg');
+  }
+  76% {
+    background-image: url('/images/cultural/patrimonio.jpg');
+  }
+  100% {
+    background-image: url('/images/cultural/ventanasHacienda.jpg');
+  }
+}
+
+
 .events-content{
   display: flex; justify-content: center;
   align-items: center;
@@ -20,7 +68,9 @@ body{
 }
 
 #OptionOne {
-  background-color: rgb(207, 204, 204);
+  background-color: transparent;
+  border: solid;
+  color: white;
   width: 45%;
   border-radius: 15px;
   display: flex;
@@ -185,7 +235,7 @@ body{
   top: 50px;
   height: 2px;
   /* width will be set using JavaScript */
-  background: #dfdfdf;
+  background: #000;
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
@@ -198,7 +248,7 @@ body{
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #313740;
+  background-color: #fff;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -250,18 +300,18 @@ body{
   transition: background-color 0.3s, border-color 0.3s;
 }
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-  background-color: #313740;
-  border-color: #313740;
+  background-color: #fff;
+  border-color: #fff;
 }
 .cd-horizontal-timeline .events a.selected {
   pointer-events: none;
 }
 .cd-horizontal-timeline .events a.selected::after {
-  background-color: #313740;
-  border-color: #313740;
+  background-color: #000;
+  border-color: #fff;
 }
 .cd-horizontal-timeline .events a.older-event::after {
-  border-color: #313740;
+  border-color: #fff;
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline::before {
@@ -545,15 +595,28 @@ ol {
 
 
 .titleN{
+  color: white;
   filter: drop-shadow(0px 0px 5px maroon);
   position: absolute;
   transform: translate(0px , -150px);
-  background: linear-gradient(to left , lime 0%, red 100%);
+  /* background: linear-gradient(to left , lime 0%, red 100%); */
 }
 
 .titleI{
+  color: white;
   filter: drop-shadow(0px 0px 5px maroon);
-  background: linear-gradient(to left , lime 0%, red 100%);
+  /* background: linear-gradient(to left , lime 0%, red 100%); */
   position: absolute;
   transform: translate(0px , 150px);
+}
+
+
+.contYears {
+  width: auto;
+  height: auto;
+  /* text-align: center; */
+  color: white;
+  position: absolute;
+  transform: translate(585px, 70px);
+  filter: drop-shadow(0px 0px 5px maroon);
 }
