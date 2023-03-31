@@ -294,7 +294,7 @@ body{
   width: 12px;
   border-radius: 50%;
   border: 2px solid #dfdfdf;
-  background-color: lime;
+  background-color: black;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
   -moz-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
@@ -307,7 +307,7 @@ body{
   pointer-events: none;
 }
 .cd-horizontal-timeline .events a.selected::after {
-  background-color: #000;
+  background-color: lime;
   border-color: #fff;
 }
 .cd-horizontal-timeline .events a.older-event::after {
