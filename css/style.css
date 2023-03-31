@@ -9,7 +9,6 @@ body{
 .events-content{
   display: flex; justify-content: center;
   align-items: center;
-  height: auto;
 }
 .events-content ol {
   display: flex; justify-content: center;
@@ -393,7 +392,7 @@ body{
 .cd-horizontal-timeline .events-content li > * {
   max-width: 800px;
   margin: 0 auto;
-}
+} 
 .cd-horizontal-timeline .events-content h4 {
   font-weight: 700;
   margin-bottom: 0px;
@@ -538,15 +537,17 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 200px;
 }
 
 
 .titleN{
-  filter: drop-shadow(8px 8px 5px gray);
+  filter: drop-shadow(8px 8px 5px red);
+  position: absolute;
+  transform: translate(0px , -150px);
 }
 
 .titleI{
-  filter: drop-shadow(8px 8px 5px gray);
+  filter: drop-shadow(8px 8px 5px red);
+  position: absolute;
+  transform: translate(0px , 150px);
 }
