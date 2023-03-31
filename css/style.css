@@ -1,6 +1,5 @@
 * {
   font-family: 'Tillana';
-  /* font-size: 22px; */
 }
 body{
     margin-top:20px;
@@ -524,7 +523,6 @@ body{
 
 ol {
   height: 100%;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -541,13 +539,15 @@ ol {
 
 
 .titleN{
-  filter: drop-shadow(8px 8px 5px red);
+  filter: drop-shadow(0px 0px 5px maroon);
   position: absolute;
   transform: translate(0px , -150px);
+  background: linear-gradient(to left , lime 0%, red 100%);
 }
 
 .titleI{
-  filter: drop-shadow(8px 8px 5px red);
+  filter: drop-shadow(0px 0px 5px maroon);
+  background: linear-gradient(to left , lime 0%, red 100%);
   position: absolute;
   transform: translate(0px , 150px);
 }
