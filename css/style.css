@@ -539,5 +539,14 @@ ol {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 300px;
+  gap: 200px;
+}
+
+
+.titleN{
+  filter: drop-shadow(8px 8px 5px gray);
+}
+
+.titleI{
+  filter: drop-shadow(8px 8px 5px gray);
 }
