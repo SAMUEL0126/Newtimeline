@@ -1,6 +1,9 @@
 * {
   font-family: 'Tillana';
 }
+::-webkit-scrollbar {
+  /* display: none; */
+}
 a {
   text-decoration: none;
 }
