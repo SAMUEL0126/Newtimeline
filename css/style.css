@@ -141,10 +141,13 @@ body{
 }
 .contTittleImg4 img {
   width: 150px;
-  margin-right: 10px;
-  margin-bottom: 15px;
+  /* margin-right: 10px;
+  margin-bottom: 15px; */
   border-radius: 10px;
   margin-right: 35px;
+}
+#iconColombia {
+  width: 190px;
 }
 .contTittleImg4 h4 {
   margin-top: 35px;
