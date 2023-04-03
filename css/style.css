@@ -2,7 +2,7 @@
   font-family: 'Tillana';
 }
 ::-webkit-scrollbar {
-  /* display: none; */
+  display: none;
 }
 a {
   text-decoration: none;
@@ -18,12 +18,56 @@ body{
     background-image: url('/images/cultural/haciendaFriaCafe.jpg');
     animation: body 40s infinite linear;
 }
+/* lente de trancision */
+/* .darWindowLineT {
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 143vh;
+  top: 0;
+  left: 0;
+  transition: 1.3s;
+  z-index: 2;
+} */
+.darWindowLineT {
+  /* position: absolute;
+  background-color: transparent;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  transition: 1.3s; */
+  animation: animateLent ease-in-out 1.5s;
+}
+
+@keyframes animateLent {
+  0%, 100% {
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 143vh;
+    top: 0;
+    left: 0;
+    transition: 1.3s;
+    z-index: 2;
+  }
+  100% {
+    position: absolute;
+    background-color: transparent;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transition: 1.3s;
+  }
+}
+
+
+/* lente de la linea del tiempo*/
 .lentDark {
   top: 0;
   left: 0;
   margin: 0;
   padding: 0;
-  width: 1348px;
+  width: 1366px;
   height: 143vh;
   position: absolute;
   /* color: white; */

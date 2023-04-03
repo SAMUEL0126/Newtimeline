@@ -264,4 +264,5 @@ $(document).ready(function($){
 	function checkMQ() {
 		return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
+
 }); 
