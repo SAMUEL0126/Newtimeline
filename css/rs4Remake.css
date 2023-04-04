@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#horas {
+    display: none;
+}
+
+#dias {
+    display: none;
+}
+
+
+#minutos {
+    background-color: red;
+    filter: drop-shadow(0px 0px 5px lime);
+}
+
+#segundos {
+    background-color: red;
+    filter: drop-shadow(0px 0px 5px lime);
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+}
+
+.cont-temporizador {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cont-temporizador .bloque {
+    margin: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-temporizador .bloque div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0px 0px 6px 2px #727272 inset;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.cont-temporizador .bloque p {
+    font-size: 11px;
+    font-weight: bold;
+    color: #d6d6d6;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+}
+
+.contenedor {
+    text-align: center;
+}
+
+/* Aplicando estilos para el contenedor del texto */
+.contenedor .cont-texto {
+    display: inline-block;
+    margin: 100px auto;
+}
+
+/* Aplicando estilos 3D para el texto */
+.contenedor .cont-texto .texto {
+    color: lime;
+    text-align: center;
+    font-size: 30px;
+    transform: perspective(200px) rotateX(10deg);
+    letter-spacing: .1em;
+    user-select: none;
+    transition: all .4s ease;
+    text-shadow: 0 -1px 0 #fff,
+        0 1px 0 #004d40,
+        0 2px 0 #00483B,
+        0 3px 0 #004639,
+        0 4px 0 #004336,
+        0 5px 0 #004134,
+        0 6px 0 #003F32,
+        0 7px 0 #003D30,
+        0 8px 0 #003A2D,
+        0 9px 0 #00382B,
+        0 10px 0 #003528,
+        0 11px 0 #003225,
+        0 12px 0 #002F22,
+        0 13px 0 #002B1E,
+        0 14px 0 #00281C,
+        0 15px 0 #001F13;
+}
+
+/* Aplicando efecto hover al texto 3D*/
+.contenedor .cont-texto .texto:hover {
+    transition: all .4s ease;
+    text-shadow: 0 0px 0 #000;
+    transform: translate(0px, 15px) perspective(200px) rotateX(10deg);
+    letter-spacing: .12em;
+}
+
+.info {
+    transform: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transform: translate(12px,-90px);
+}
+
+h1{
+    font-size: 20px;
+}
