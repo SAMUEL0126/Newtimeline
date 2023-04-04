@@ -94,3 +94,23 @@ function render(minutos, segundos) {
 
 //Ejecutamos cada segundo
 setInterval(cargarSegundo,1000);
+
+// funciones de scroll 
+window.addEventListener('load', ()=> {
+    setTimeout(() => {
+        window.scroll({
+            top: 215,
+            bottom: 0,
+            behavior: 'smooth'
+        })
+    }, 2000);
+    setTimeout(() => {
+        window.scroll({
+            top: 0,
+            bottom: 0,
+            behavior: 'smooth'
+        })
+    }, 40000);
+
+
+})
