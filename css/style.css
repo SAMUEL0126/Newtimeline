@@ -17,6 +17,8 @@ body{
     transition: all .1s ease-in-out;
     background-image: url('/images/cultural/haciendaFriaCafe.jpg');
     animation: body 40s infinite linear;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 /* lente de trancision */
 /* .darWindowLineT {
