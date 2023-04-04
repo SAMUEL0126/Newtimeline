@@ -96,7 +96,12 @@ function render(minutos, segundos) {
 setInterval(cargarSegundo,1000);
 
 // funciones de scroll 
-window.addEventListener('load', ()=> {
+let año1927 = document.getElementById('id1927')
+let año19271 = document.getElementById('1928')
+año1927.addEventListener('click', ScrollFunction)
+año19271.addEventListener('click', ScrollFunction)
+
+function ScrollFunction() {
     setTimeout(() => {
         window.scroll({
             top: 215,
@@ -111,6 +116,8 @@ window.addEventListener('load', ()=> {
             behavior: 'smooth'
         })
     }, 40000);
+}
 
-
+window.addEventListener('load', ()=> {
+    ScrollFunction();
 })
