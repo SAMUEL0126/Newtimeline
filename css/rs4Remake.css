@@ -14,11 +14,13 @@
 
 
 #minutos {
+    width: 70px;
     background-color: red;
     filter: drop-shadow(0px 0px 5px lime);
 }
 
 #segundos {
+    width: 70px;
     background-color: red;
     filter: drop-shadow(0px 0px 5px lime);
 }
@@ -112,7 +114,7 @@ body {
 .contenedor .cont-texto .texto:hover {
     transition: all .4s ease;
     text-shadow: 0 0px 0 #000;
-    transform: translate(0px, 15px) perspective(200px) rotateX(10deg);
+    /* transform: translate(0px, 15px) perspective(200px) rotateX(10deg); */
     letter-spacing: .12em;
 }
 
@@ -120,10 +122,10 @@ body {
     transform: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    transform: translate(12px,-90px);
+    gap: 8px;
+    transform: translate(-155px,1px);
 }
 
-h1{
-    font-size: 20px;
+.time{
+    font-size: 15px;
 }

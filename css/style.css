@@ -20,6 +20,15 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.contTime {
+  width: 95%;
+  /* height: auto; */
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  transform: translate(186px, -56px);
+  position: fixed;
+}
 /* lente de trancision */
 /* .darWindowLineT {
   position: absolute;
@@ -70,7 +79,7 @@ body{
   margin: 0;
   padding: 0;
   width: 1366px;
-  height: 143vh;
+  height: 156vh;
   position: absolute;
   /* color: white; */
   background-color: rgba(0, 22, 40, .6);
@@ -672,6 +681,6 @@ ol {
   /* text-align: center; */
   color: white;
   position: absolute;
-  transform: translate(585px, 70px);
+  transform: translate(585px, 100px);
   filter: drop-shadow(0px 0px 5px maroon);
 }

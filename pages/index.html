@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/rs4Remake.css">
 	<link href='https://fonts.googleapis.com/css?family=Tillana' rel='stylesheet'>
 	<title>Time line</title>
 </head>
@@ -21,27 +22,60 @@
 				<div class="card">
 					<div class="body">
 						<div class="cd-horizontal-timeline loaded" style="height: auto;">
-							<img style="width: 200px;transform: translate(585px ,0px);" class="logoparque" src="/images/LogoParqueDelCafe.png" alt="">
+							<div class="contTime">
+								<div class="cont-temporizador">
+									<div class="bloque">
+										<div class="dias" id="dias">00</div>
+										<p id="dias">DÍAS</p>
+									</div>
+									<div class="bloque">
+										<div class="horas" id="horas">--</div>
+										<p id="horas">HORAS</p>
+									</div>
+									<div class="bloque">
+										<div class="minutos" id="minutos">--</div>
+									</div>
+									<div class="bloque">
+										<div class="segundos" id="segundos">--</div>
+									</div>
+								</div>
+								<div class="info">
+									<div class="contenedor">
+										<div class="cont-texto">
+											<div class="texto">
+												<h1 class="time"> minutos </h1>
+											</div>
+										</div>
+									</div>
+									<div class="contenedor">
+										<div class="cont-texto">
+											<div class="texto">
+												<h1 class="time"> segundos </h1>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img style="width: 200px;transform: translate(585px ,0px);" class="logoparque"
+								src="/images/LogoParqueDelCafe.png" alt="">
 							<div class="contYears">
 								<h2>AÑOS DE HISTORIA</h2>
 							</div>
 							<div class="timeline">
 								<div class="events-wrapper">
-									
+
 									<div class="events" style="width: 1800px;">
-										
+
 										<ol>
 											<li><a href="#0" data-date="01/12/2016" class="selected"
-												style="left: 120px;color: white; ">Instrucciones</a>
+													style="left: 120px;color: white; ">Instrucciones</a>
 											</li>
 											<li><a href="#0" data-date="16/01/2017" class=""
 													style="left: 120px;color: white; ">1927</a>
 											</li>
-											<li><a href="#0" data-date="20/02/2017"
-													style="left: 300px;color: white;"
+											<li><a href="#0" data-date="20/02/2017" style="left: 300px;color: white;"
 													class="older-event">1928</a></li>
-											<li><a href="#0" data-date="20/03/2017"
-													style="left: 480px;color: white;"
+											<li><a href="#0" data-date="20/03/2017" style="left: 480px;color: white;"
 													class="older-event">1929</a></li>
 											<li><a href="#0" data-date="20/04/2017"
 													style="left: 600px;color: white;">1938</a>
@@ -87,11 +121,9 @@
 								<!-- .events-wrapper -->
 								<ul class="cd-timeline-navigation">
 
-									<li><a href="#0"
-											style="background: linear-gradient(to left , lime 0%, red 100%);"
+									<li><a href="#0" style="background: linear-gradient(to left , lime 0%, red 100%);"
 											class="prev inactive">Prev</a></li>
-									<li><a href="#0"
-											style="background: linear-gradient(to left , lime 0%, red 100%);"
+									<li><a href="#0" style="background: linear-gradient(to left , lime 0%, red 100%);"
 											class="next">Next</a></li>
 
 								</ul>
@@ -99,7 +131,7 @@
 							</div>
 							<!-- .timeline -->
 							<div class="events-content" style="height: auto;">
-								<div class="pruebasisas" >
+								<div class="pruebasisas">
 									<h1 class="titleN">Nacional</h1>
 									<h1 class="titleI">Internacional</h1>
 								</div>
@@ -108,40 +140,41 @@
 
 									<li style="height: auto;" id="OptionOne" data-date="01/12/2016" class="selected">
 										<div class="contTittleImg">
-											
-											
-											<img id="iconColombia" class="rounded float-left m-r-15" width="40" alt="user"
-												src="/images/icon/iconoColombia-removebg-preview.png"><br>
+
+
+											<img id="iconColombia" class="rounded float-left m-r-15" width="40"
+												alt="user" src="/images/icon/iconoColombia-removebg-preview.png"><br>
 										</div>
 										<hr>
 										<div class="contTextInfo">
 											<p>
 												En este apartado superior encontraras informacion
 												sobre la histora del cafe tanto en produccion como en muchos
-												otros factores importantes en la linea del tiempo pero solo 
+												otros factores importantes en la linea del tiempo pero solo
 												nacionalmente es decir, hallaras informacion pero solo lo que halla
 												ocurrido en Colombia.
 												<br>
-												
+
 											</p>
 										</div>
 									</li>
 									<li style="height: auto;" id="OptionOne" data-date="01/12/2016" class="selected">
 										<div class="contTittleImg">
-											
+
 											<img id="iconWorld" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/icon/internacionalIcon-removebg-preview.png"><br>
 										</div>
 										<hr>
 										<div class="contTextInfo">
 											<p>
-												En este apartado inferior encontraras informacion sobre la 
-												exportación de cafe, historia y muchas otras cosas en el 
-												ambito del cafe a nivel internacional, la historia sobre 
-												como juan valdez logro convertirse en  un miembro del negocio de cafeterías a nivel mundial 
-												y promover el café colombiano.  
+												En este apartado inferior encontraras informacion sobre la
+												exportación de cafe, historia y muchas otras cosas en el
+												ambito del cafe a nivel internacional, la historia sobre
+												como juan valdez logro convertirse en un miembro del negocio de
+												cafeterías a nivel mundial
+												y promover el café colombiano.
 												<br>
-												
+
 											</p>
 										</div>
 									</li>
@@ -154,7 +187,7 @@
 									<li style="height: auto;" id="OptionOne" data-date="16/01/2017" class="">
 										<div class="contTittleImg">
 											<h4>27 de junio de 1927</h4>
-											
+
 											<img class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/federacionCafeteros.png"><br>
 										</div>
@@ -164,19 +197,19 @@
 												¿que es la federacion nacional de cafeteros?
 
 												La Federación Nacional de Cafeteros de Colombia
-												es una ONG rural que contribuye a promover el 
+												es una ONG rural que contribuye a promover el
 												cultivo del café en Colombia y su exportación a
-											    mercados internacionales, con la misión de procurar 
-											    el bienestar de los caficultores colombianos.
+												mercados internacionales, con la misión de procurar
+												el bienestar de los caficultores colombianos.
 												<br>
-												
+
 											</p>
 										</div>
 									</li>
 									<li style="height: auto;" id="OptionOne" data-date="16/01/2017" class="">
 										<div class="contTittleImg">
 											<h4>27 de junio de 1927</h4>
-											
+
 											<img class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/federacionCafeteros.png"><br>
 										</div>
@@ -186,19 +219,19 @@
 												¿que es la federacion nacional de cafeteros?
 
 												La Federación Nacional de Cafeteros de Colombia
-												es una ONG rural que contribuye a promover el 
+												es una ONG rural que contribuye a promover el
 												cultivo del café en Colombia y su exportación a
-											    mercados internacionales, con la misión de procurar 
-											    el bienestar de los caficultores colombianos.
+												mercados internacionales, con la misión de procurar
+												el bienestar de los caficultores colombianos.
 												<br>
-												
+
 											</p>
 										</div>
 									</li>
 									<li style="height: auto;" id="OptionOne" data-date="20/02/2017" class="">
 										<div class="contTittleImg">
 											<h4>1928 servicio de asistencia </h4>
-											
+
 											<img class="rounded float-left m-r-15" id="img1928" width="40" alt="user"
 												src="/images/Asistencia1928.jpg"><br>
 										</div>
@@ -209,14 +242,14 @@
 												mejores prácticas entre los
 												productores
 												<br>
-												
+
 											</p>
 										</div>
 									</li>
 									<li style="height: auto;" id="OptionOne" data-date="20/02/2017" class="">
 										<div class="contTittleImg">
 											<h4>1928 servicio de asistencia </h4>
-											
+
 											<img class="rounded float-left m-r-15" id="img1928" width="40" alt="user"
 												src="/images/Asistencia1928.jpg"><br>
 										</div>
@@ -227,26 +260,26 @@
 												mejores prácticas entre los
 												productores
 												<br>
-												
+
 											</p>
 										</div>
 									</li>
-									
+
 
 									<li style="height: auto;" id="OptionOne" data-date="20/03/2017" class="">
 										<div class="contTittleImg">
 											<h4> inicios de la compañia 1929</h4>
-											
+
 											<img class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/inicios1929.webp"><br>
 										</div>
 										<hr>
 										<div class="contTextInfo">
-											<p>el 3 de agosto de 1929. Los primeros miembros 
-												fueron Mariano Ospina Vásquez, Alberto Camilo 
-												Suárez, Gabriel Ortiz Williamson, Carlos 
-												Caballero, Jesús del Corral y Mariano Ospina 
-												Pérez, debido a los conocimientos y la experiencia 
+											<p>el 3 de agosto de 1929. Los primeros miembros
+												fueron Mariano Ospina Vásquez, Alberto Camilo
+												Suárez, Gabriel Ortiz Williamson, Carlos
+												Caballero, Jesús del Corral y Mariano Ospina
+												Pérez, debido a los conocimientos y la experiencia
 												de la industria del café.
 												<br>
 												<!-- <button class="btn btn-primary btn-round">Read more</button> -->
@@ -256,17 +289,17 @@
 									<li style="height: auto;" id="OptionOne" data-date="20/03/2017" class="">
 										<div class="contTittleImg">
 											<h4> inicios de la compañia 1929</h4>
-											
+
 											<img class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/inicios1929.webp"><br>
 										</div>
 										<hr>
 										<div class="contTextInfo">
-											<p>el 3 de agosto de 1929. Los primeros miembros 
-												fueron Mariano Ospina Vásquez, Alberto Camilo 
-												Suárez, Gabriel Ortiz Williamson, Carlos 
-												Caballero, Jesús del Corral y Mariano Ospina 
-												Pérez, debido a los conocimientos y la experiencia 
+											<p>el 3 de agosto de 1929. Los primeros miembros
+												fueron Mariano Ospina Vásquez, Alberto Camilo
+												Suárez, Gabriel Ortiz Williamson, Carlos
+												Caballero, Jesús del Corral y Mariano Ospina
+												Pérez, debido a los conocimientos y la experiencia
 												de la industria del café.
 												<br>
 												<!-- <button class="btn btn-primary btn-round">Read more</button> -->
@@ -280,7 +313,7 @@
 									<li style="height: auto;" id="OptionOne" data-date="20/04/2017" class="">
 										<div class="contTittleImg">
 											<h4>1938</h4>
-											
+
 											<img id="img1938" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/instituto1930.webp"><br>
 										</div>
@@ -301,7 +334,7 @@
 									<li style="height: auto;" id="OptionOne" data-date="20/04/2017" class="">
 										<div class="contTittleImg">
 											<h4>1938</h4>
-											
+
 											<img id="img1938" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/instituto1930.webp"><br>
 										</div>
@@ -321,10 +354,10 @@
 									</li>
 
 
-									<li style="height: auto;" id="OptionOne"  data-date="09/05/2017" class="">
+									<li style="height: auto;" id="OptionOne" data-date="09/05/2017" class="">
 										<div class="contTittleImg4">
-											<h4>1940  se crea fondo nacional del cafe</h4>
-											
+											<h4>1940 se crea fondo nacional del cafe</h4>
+
 											<img id="img1940" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/fondoNacionalDelCafe1940.jpg"><br>
 										</div>
@@ -342,10 +375,10 @@
 											</p>
 										</div>
 									</li>
-									<li style="height: auto;" id="OptionOne"  data-date="09/05/2017" class="">
+									<li style="height: auto;" id="OptionOne" data-date="09/05/2017" class="">
 										<div class="contTittleImg4">
-											<h4>1940  se crea fondo nacional del cafe</h4>
-											
+											<h4>1940 se crea fondo nacional del cafe</h4>
+
 											<img id="img1940" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/fondoNacionalDelCafe1940.jpg"><br>
 										</div>
@@ -367,10 +400,10 @@
 
 
 
-									<li style="height: auto;" id="OptionOne"  data-date="30/06/2017" class="">
+									<li style="height: auto;" id="OptionOne" data-date="30/06/2017" class="">
 										<div class="contTittleImg4">
-											<h4>1958  Garantia de compra</h4>
-											
+											<h4>1958 Garantia de compra</h4>
+
 											<img id="img1940" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/garantiadecompra1958.jpg"><br>
 										</div>
@@ -378,19 +411,20 @@
 										<div class="contTextInfo4">
 											<p>
 												Nace la garantia de compra, mecanismo que asegura a los
-												caficultores la comercializacion de su producto a un precio transparente,
-												con el pago de contado y en lugares cercanos a su centro de produccion. 
-												Este bien publico  se ejerce atravez de las cooperativas de caficultores
+												caficultores la comercializacion de su producto a un precio
+												transparente,
+												con el pago de contado y en lugares cercanos a su centro de produccion.
+												Este bien publico se ejerce atravez de las cooperativas de caficultores
 												en mas de 500 puntos de todo el pais
 												<br>
 												<!-- <button class="btn btn-primary btn-round">Read more</button> -->
 											</p>
 										</div>
 									</li>
-									<li style="height: auto;" id="OptionOne"  data-date="30/06/2017" class="">
+									<li style="height: auto;" id="OptionOne" data-date="30/06/2017" class="">
 										<div class="contTittleImg4">
-											<h4>1958  Garantia de compra</h4>
-											
+											<h4>1958 Garantia de compra</h4>
+
 											<img id="img1940" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/garantiadecompra1958.jpg"><br>
 										</div>
@@ -398,22 +432,23 @@
 										<div class="contTextInfo4">
 											<p>
 												Nace la garantia de compra, mecanismo que asegura a los
-												caficultores la comercializacion de su producto a un precio transparente,
-												con el pago de contado y en lugares cercanos a su centro de produccion. 
-												Este bien publico  se ejerce atravez de las cooperativas de caficultores
+												caficultores la comercializacion de su producto a un precio
+												transparente,
+												con el pago de contado y en lugares cercanos a su centro de produccion.
+												Este bien publico se ejerce atravez de las cooperativas de caficultores
 												en mas de 500 puntos de todo el pais
 												<br>
 												<!-- <button class="btn btn-primary btn-round">Read more</button> -->
 											</p>
 										</div>
 									</li>
-									
 
 
-									<li style="height: auto;" id="OptionOne"  data-date="15/07/2017" class="">
+
+									<li style="height: auto;" id="OptionOne" data-date="15/07/2017" class="">
 										<div class="contTittleImg4">
-											<h4>1960  Juan Valdez</h4>
-											
+											<h4>1960 Juan Valdez</h4>
+
 											<img id="img1960" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/iconocafeteroBlack1960.jpg"><br>
 										</div>
@@ -423,17 +458,17 @@
 												Se crea el icono que representa a los cafeteros colombianos y promueve
 												la calidad del cafe de colombia alrededor del mundo.
 
-												Con el fin de capacitar los productores a sus familias y a las 
+												Con el fin de capacitar los productores a sus familias y a las
 												comunidades rurales, se crea la Fundacion Manuel Mejia.
 												<br>
 												<!-- <button class="btn btn-primary btn-round">Read more</button> -->
 											</p>
 										</div>
 									</li>
-									<li style="height: auto;" id="OptionOne"  data-date="15/07/2017" class="">
+									<li style="height: auto;" id="OptionOne" data-date="15/07/2017" class="">
 										<div class="contTittleImg4">
-											<h4>1960  Juan Valdez</h4>
-											
+											<h4>1960 Juan Valdez</h4>
+
 											<img id="img1960" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/iconocafeteroBlack1960.jpg"><br>
 										</div>
@@ -443,7 +478,7 @@
 												Se crea el icono que representa a los cafeteros colombianos y promueve
 												la calidad del cafe de colombia alrededor del mundo.
 
-												Con el fin de capacitar los productores a sus familias y a las 
+												Con el fin de capacitar los productores a sus familias y a las
 												comunidades rurales, se crea la Fundacion Manuel Mejia.
 												<br>
 												<!-- <button class="btn btn-primary btn-round">Read more</button> -->
@@ -451,56 +486,56 @@
 										</div>
 									</li>
 
-								
-									
 
-									<li style="height: auto;" id="OptionOne"  data-date="01/8/2017" class="">
+
+
+									<li style="height: auto;" id="OptionOne" data-date="01/8/2017" class="">
 										<div class="contTittleImg4">
 											<h4>1974 Buen cafe Liofilizado</h4>
-											
+
 											<img id="img1960" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/buencafeliofilizado1974.png"><br>
 										</div>
 										<hr>
 										<div class="contTextInfo4">
 											<p>
-												Como uno de los primeros pasos para 
+												Como uno de los primeros pasos para
 												escalar en la cadena de valor, nace Buencafe Liofilizado
-												de Colombia, una de las mas grandes y sofisticadas procesadoras de 
+												de Colombia, una de las mas grandes y sofisticadas procesadoras de
 												cafe Liofilizado en el mundo.
 												<br>
 												<!-- <button class="btn btn-primary btn-round">Read more</button> -->
 											</p>
 										</div>
 									</li>
-									<li style="height: auto;" id="OptionOne"  data-date="01/8/2017" class="">
+									<li style="height: auto;" id="OptionOne" data-date="01/8/2017" class="">
 										<div class="contTittleImg4">
-											<h4>1974  Buen cafe Liofilizado</h4>
-											
+											<h4>1974 Buen cafe Liofilizado</h4>
+
 											<img id="img1960" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/buencafeliofilizado1974.png"><br>
 										</div>
 										<hr>
 										<div class="contTextInfo4">
 											<p>
-												Como uno de los primeros pasos para 
+												Como uno de los primeros pasos para
 												escalar en la cadena de valor, nace Buencafe Liofilizado
-												de Colombia, una de las mas grandes y sofisticadas procesadoras de 
+												de Colombia, una de las mas grandes y sofisticadas procesadoras de
 												cafe Liofilizado en el mundo.
 												<br>
 												<!-- <button class="btn btn-primary btn-round">Read more</button> -->
 											</p>
 										</div>
 									</li>
-									
 
 
 
 
-									<li style="height: auto;" id="OptionOne"  data-date="10/9/2017" class="">
+
+									<li style="height: auto;" id="OptionOne" data-date="10/9/2017" class="">
 										<div class="contTittleImg4">
 											<h4>2002 Procafecol</h4>
-											
+
 											<img id="img1960" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/Procafecol2002.webp"><br>
 										</div>
@@ -508,18 +543,18 @@
 										<div class="contTextInfo4">
 											<p>
 												El 2 de diciembre de este año abre sus puertas
-												la primera tienda de juan valdez Cafe. Con este modelo 
-												de negocio se genera valor agregado para los caficultores 
-												colombianos.													
+												la primera tienda de juan valdez Cafe. Con este modelo
+												de negocio se genera valor agregado para los caficultores
+												colombianos.
 												<br>
 												<!-- <button class="btn btn-primary btn-round">Read more</button> -->
 											</p>
 										</div>
 									</li>
-									<li style="height: auto;" id="OptionOne"  data-date="10/9/2017" class="">
+									<li style="height: auto;" id="OptionOne" data-date="10/9/2017" class="">
 										<div class="contTittleImg4">
 											<h4>2002 Procafecol</h4>
-											
+
 											<img id="img1960" class="rounded float-left m-r-15" width="40" alt="user"
 												src="/images/Procafecol2002.webp"><br>
 										</div>
@@ -527,8 +562,8 @@
 										<div class="contTextInfo4">
 											<p>
 												El 2 de diciembre de este año abre sus puertas
-												la primera tienda de juan valdez Cafe. Con este modelo 
-												de negocio se genera valor agregado para los caficultores 
+												la primera tienda de juan valdez Cafe. Con este modelo
+												de negocio se genera valor agregado para los caficultores
 												colombianos.
 												<br>
 												<!-- <button class="btn btn-primary btn-round">Read more</button> -->
@@ -607,7 +642,7 @@
 	</div>
 
 	<script src="/js/jquery-3.6.4.min.js"></script>
-
+	<script src="/js/rs4Remake.js"></script>
 	<script src="/js/app.js"></script>
 
 </body>
