@@ -30,23 +30,8 @@ body{
   position: fixed;
 }
 /* lente de trancision */
-/* .darWindowLineT {
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 143vh;
-  top: 0;
-  left: 0;
-  transition: 1.3s;
-  z-index: 2;
-} */
+
 .darWindowLineT {
-  /* position: absolute;
-  background-color: transparent;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  transition: 1.3s; */
   animation: animateLent ease-in-out 1.5s;
 }
 
@@ -71,6 +56,30 @@ body{
   }
 }
 
+.darWindowLineRen {
+  animation: animateLentRen ease-in-out 1.5s;
+}
+
+@keyframes animateLentRen {
+  0%, 100% {
+    position: absolute;
+    background-color: transparent;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transition: 1.3s;
+  }
+  100% {
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 143vh;
+    top: 0;
+    left: 0;
+    transition: 1.3s;
+    z-index: 4;
+  }
+}
 
 /* lente de la linea del tiempo*/
 .lentDark {

@@ -12,7 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #000;
-    animation: animante_Body 4s ease-in-out infinite;
+    animation: animante_Body 6s ease-in-out infinite;
 }
 .father {
     width: 100%;
@@ -28,10 +28,10 @@ body {
     text-align: center;
 }
 .father .contInstructions h2 {
-    animation: animate_h2 4s ease-in-out infinite;
+    animation: animate_h2 6s ease-in-out infinite;
 }
 .father .contInstructions p {
-    animation: animate_h2 4s ease-in-out infinite;
+    animation: animate_h2 6s ease-in-out infinite;
 }
 .scan {
     position: relative;
@@ -67,7 +67,7 @@ body {
     height: 100%;
     background-image: url('/images/icon/logodelparqueWhite.png');
     background-size: 500px;
-    animation: animate 4s ease-in-out infinite;
+    animation: animate 6s ease-in-out infinite;
 }
 @keyframes animate {
     0%,100%
@@ -88,7 +88,7 @@ body {
     background: red;
     border-radius: 8px;
     filter: drop-shadow(0 0 20px red) drop-shadow(0 0 60px red);
-    animation: animante_line 4s ease-in-out infinite;
+    animation: animante_line 6s ease-in-out infinite;
 }
 
 @keyframes animante_line {
@@ -162,7 +162,7 @@ body {
     justify-content: center;
 }
 .btn {
-    animation: animate-btn 4s ease-in-out infinite;
+    animation: animate-btn 6s ease-in-out infinite;
 }
 
 .btn:link,

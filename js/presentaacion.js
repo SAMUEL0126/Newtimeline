@@ -5,7 +5,7 @@ $(function() {
 
        setTimeout(() => {
         window.location.assign('/pages/index.html')
-    }, 3500);
+    }, 2500);
     }) 
 })
 
