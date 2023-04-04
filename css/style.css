@@ -48,7 +48,7 @@ body{
     top: 0;
     left: 0;
     transition: 1.3s;
-    z-index: 2;
+    z-index: 3;
   }
   100% {
     position: absolute;
@@ -147,7 +147,10 @@ body{
   margin-right: 35px;
 }
 #iconColombia {
-  width: 190px;
+  width: 250px;
+}
+#iconWorld {
+  width: 250px;
 }
 .contTittleImg4 h4 {
   margin-top: 35px;
@@ -158,8 +161,8 @@ body{
 }
 .contTittleImg img {
   width: 140px;
-  margin-right: 10px;
-  margin-bottom: 15px;
+  /* margin-right: 10px; */
+  /* margin-bottom: 15px; */
   border-radius: 10px;
 }
 .contTittleImg #img1928 {
