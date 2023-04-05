@@ -1,6 +1,6 @@
 let horas = 0;
-let minutos = 0;
-let segundos = 5;
+let minutos = 10;
+let segundos = 0;
 cargarSegundo();
 
 //Definimos y ejecutamos los segundos

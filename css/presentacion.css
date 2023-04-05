@@ -38,24 +38,13 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* animation: animateColor 6s linear infinite; */
 }
-/* @keyframes animateColor
-{
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
-} */
 .scan .face{
     position: relative;
     width: 500px;
     height: 500px;
     background-image: url('/images/icon/logoblancoParque-removebg-preview.png');
     background-size: 500px;
-    /* background-repeat: no-repeat; */
 }
 
 .scan .face::before {
