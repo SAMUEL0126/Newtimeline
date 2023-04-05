@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -66,4 +66,4 @@ body{
 
 .btn:hover::after{
     transform: translateX(170px) skewX(30deg); 
-}
+} */
