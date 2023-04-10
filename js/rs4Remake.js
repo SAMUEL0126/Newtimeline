@@ -161,3 +161,13 @@ function openInput() {
     BtnBuscar.classList.toggle('Btnhidden')
     BtnBuscar.classList.toggle('Btnvisible')
 }
+
+let BtnBuscar = document.getElementById('BtnBuscar')
+BtnBuscar.addEventListener('click', valueInput)
+
+function valueInput() {
+    let searchBox = document.getElementById('searchBox')
+    console.log(searchBox.value);
+    let id1927 = document.getElementById('id1927')
+    console.log(id1927);
+}
