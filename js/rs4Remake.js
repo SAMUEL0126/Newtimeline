@@ -144,3 +144,15 @@ function ScrollFunction() {
 window.addEventListener('load', () => {
     ScrollFunction();
 })
+
+
+/*Seccion de funcionalidad para el buscador*/
+
+let BtnOpenSearch = document.getElementById('BtnOpenSearch')
+BtnOpenSearch.addEventListener('click', openInput)
+
+function openInput() {
+    let searchBox = document.getElementById('searchBox')
+    searchBox.classList.remove('inputHidden')
+    searchBox.classList.add('inputYearSearch')
+}

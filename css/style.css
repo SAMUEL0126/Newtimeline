@@ -705,7 +705,7 @@ ol {
   display: flex;
   justify-content: end;
   position: fixed;
-  padding-right: 12px;
+  padding-right: 25px;
 }
 .contBtnSearch button{
   width: 60px;
@@ -727,7 +727,13 @@ ol {
   position: absolute;
   transform: translate(-250px,-140px);
 }
-.contInputSearch input {
+.contInputSearch .inputHidden {
+  height: 40px;
+  width: 0;
+  visibility: hidden;
+}
+
+.inputYearSearch {
   height: 40px;
   width: 200px;
   background-color: rgb(255, 255, 255);
@@ -735,4 +741,6 @@ ol {
   border: none;
   border-radius: 20px;
   padding: 10px;
+  visibility: visible;
+  transition: 0.8s;
 }
