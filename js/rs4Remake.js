@@ -104,9 +104,9 @@ setTimeout(() => {
 
 // funciones de scroll 
 let año1927 = document.getElementById('id1927')
-let año19271 = document.getElementById('id1928')
+let año1928 = document.getElementById('id1928')
 año1927.addEventListener('click', ScrollFunction)
-año19271.addEventListener('click', ScrollFunction)
+año1928.addEventListener('click', ScrollFunction)
 
 function ScrollFunction() {
     setTimeout(() => {
