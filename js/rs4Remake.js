@@ -1,99 +1,106 @@
 let horas = 0;
 let minutos = 10;
 let segundos = 0;
-cargarSegundo();
 
-//Definimos y ejecutamos los segundos
-function cargarSegundo(){
-    let txtSegundos;
-    
-    
-    if(segundos < 0){
-        segundos = 59; 
+setTimeout(() => {
+
+
+    cargarSegundo();
+
+    //Definimos y ejecutamos los segundos
+    function cargarSegundo() {
+        let txtSegundos;
+
+
+        if (segundos < 0) {
+            segundos = 59;
+        }
+
+        //Mostrar Segundos en pantalla
+        if (segundos < 10) {
+            txtSegundos = `0${segundos}`;
+        }
+        else {
+            txtSegundos = segundos;
+        }
+        document.getElementById('segundos').innerHTML = txtSegundos;
+        segundos--;
+
+        cargarMinutos(segundos);
     }
 
-    //Mostrar Segundos en pantalla
-    if(segundos < 10){
-        txtSegundos = `0${segundos}`;
-    }
-    else{
-        txtSegundos = segundos;
-    }
-    document.getElementById('segundos').innerHTML = txtSegundos;
-    segundos--;
+    //Definimos y ejecutamos los minutos
+    function cargarMinutos(segundos) {
+        let txtMinutos;
 
-    cargarMinutos(segundos);
-}
+        if (segundos == -1 && minutos !== 0) {
+            setTimeout(() => {
+                minutos--;
+            }, 500)
+        } else if (segundos == -1 && minutos == 0) {
+            setTimeout(() => {
+                minutos = 00;
+            }, 500)
+        }
+        else if (segundos == 0 && minutos == 0) {
+            setTimeout(() => {
+                minutos = 00;
+                segundos = 00
+            }, 500)
+        }
 
-//Definimos y ejecutamos los minutos
-function cargarMinutos(segundos){
-    let txtMinutos;
-
-    if(segundos == -1 && minutos !== 0){
-        setTimeout(() =>{
-            minutos--;
-        },500)
-    }else if(segundos == -1 && minutos == 0){
-        setTimeout(() =>{
-            minutos = 00;
-        },500)
-    }
-    else if (segundos == 0 && minutos == 0) {
-        setTimeout(() =>{
-            minutos = 00;
-            segundos = 00
-        },500)
+        //Mostrar Minutos en pantalla
+        if (minutos < 10) {
+            txtMinutos = `0${minutos}`;
+        } else {
+            txtMinutos = minutos;
+        }
+        document.getElementById('minutos').innerHTML = txtMinutos;
+        cargarHoras(segundos, minutos);
+        render(minutos, segundos)
     }
 
-    //Mostrar Minutos en pantalla
-    if(minutos < 10){
-        txtMinutos = `0${minutos}`;
-    }else{
-        txtMinutos = minutos;
-    }
-    document.getElementById('minutos').innerHTML = txtMinutos;
-    cargarHoras(segundos,minutos);
-    render(minutos, segundos)
-}
+    //Definimos y ejecutamos las horas
+    function cargarHoras(segundos, minutos) {
+        let txtHoras;
 
-//Definimos y ejecutamos las horas
-function cargarHoras(segundos,minutos){
-    let txtHoras;
+        if (segundos == -1 && minutos == 0 && horas !== 0) {
+            setTimeout(() => {
+                horas--;
+            }, 500)
+        } else if (segundos == -1 && minutos == 0 && horas == 0) {
+            setTimeout(() => {
+                horas = 2;
+            }, 500)
+        }
 
-    if(segundos == -1 && minutos == 0 && horas !== 0){
-        setTimeout(() =>{
-            horas--;
-        },500)
-    }else if(segundos == -1 && minutos == 0 && horas == 0){
-        setTimeout(() =>{
-            horas = 2;
-        },500)
+        //Mostrar Horas en pantalla
+        if (horas < 10) {
+            txtHoras = `0${horas}`;
+        } else {
+            txtHoras = horas;
+        }
+        document.getElementById('horas').innerHTML = txtHoras;
     }
 
-    //Mostrar Horas en pantalla
-    if(horas < 10){
-        txtHoras = `0${horas}`;
-    }else{
-        txtHoras = horas;
+
+    function render(minutos, segundos) {
+        if (minutos == 0 && segundos == 0) {
+            setTimeout(() => {
+                $('#darWindowLineT').addClass('darWindowLineRen')
+            }, 900);
+            setTimeout(() => {
+                window.location.assign('/pages/presentacion.html')
+            }, 2000);
+        }
     }
-    document.getElementById('horas').innerHTML = txtHoras;
-}
 
 
-function render(minutos, segundos) {
-    if (minutos == 0 && segundos == 0) {
-        setTimeout(() => {
-            $('#darWindowLineT').addClass('darWindowLineRen')
-        }, 900);
-        setTimeout(() => {
-            window.location.assign('/pages/presentacion.html')
-        }, 2000);
-    }
-}
-
-
-//Ejecutamos cada segundo
-setInterval(cargarSegundo,1000);
+    //Ejecutamos cada segundo
+    setInterval(cargarSegundo, 1000);
+    let contTime = document.getElementById('contTime')
+    contTime.classList.add('positionFixedCloc')
+}, 41000);
 
 // funciones de scroll 
 let año1927 = document.getElementById('id1927')
@@ -118,6 +125,6 @@ function ScrollFunction() {
     }, 40000);
 }
 
-window.addEventListener('load', ()=> {
+window.addEventListener('load', () => {
     ScrollFunction();
 })

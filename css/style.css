@@ -27,6 +27,9 @@ body{
   display: flex;
   justify-content: end;
   transform: translate(186px, -56px);
+  /* position: fixed; */
+}
+.positionFixedCloc {
   position: fixed;
 }
 /* lente de trancision */
