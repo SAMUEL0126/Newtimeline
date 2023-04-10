@@ -696,3 +696,26 @@ ol {
   transform: translate(585px, 100px);
   filter: drop-shadow(0px 0px 5px maroon);
 }
+
+
+/*Btn Search*/
+.contBtnSearch {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  padding-right: 12px;
+}
+.contBtnSearch button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
