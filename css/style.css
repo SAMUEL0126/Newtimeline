@@ -719,3 +719,20 @@ ol {
   cursor: pointer;
   border: none;
 }
+
+/*Input Seacrh*/
+.contInputSearch {
+  width: auto;
+  height: auto;
+  position: absolute;
+  transform: translate(-250px,-140px);
+}
+.contInputSearch input {
+  height: 40px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
