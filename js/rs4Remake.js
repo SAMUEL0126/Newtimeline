@@ -112,6 +112,7 @@ let año1958 = document.getElementById('id1958')
 let año1960 = document.getElementById('id1960')
 let año1974 = document.getElementById('id1974')
 let año2002 = document.getElementById('id2002')
+let año2016 = document.getElementById('id2016')
 año1927.addEventListener('click', ScrollFunction)
 año1928.addEventListener('click', ScrollFunction)
 año1929.addEventListener('click', ScrollFunction)
@@ -121,6 +122,7 @@ año1958.addEventListener('click', ScrollFunction)
 año1960.addEventListener('click', ScrollFunction)
 año1974.addEventListener('click', ScrollFunction)
 año2002.addEventListener('click', ScrollFunction)
+año2016.addEventListener('click', ScrollFunction)
 
 function ScrollFunction() {
     setTimeout(() => {
