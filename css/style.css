@@ -728,6 +728,7 @@ ol {
   transform: translate(-250px,-140px);
 }
 .contInputSearch .inputHidden {
+  text-align: center;
   height: 40px;
   width: 0;
   border-radius: 20px;
@@ -736,6 +737,7 @@ ol {
 }
 
 .inputYearSearch {
+  text-align: center;
   height: 40px;
   width: 200px;
   background-color: rgb(255, 255, 255);
@@ -770,4 +772,5 @@ ol {
   visibility: visible;
   transition: 0.8s;
   overflow: hidden;
+  cursor: pointer;
 }
