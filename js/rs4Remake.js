@@ -105,8 +105,22 @@ setTimeout(() => {
 // funciones de scroll 
 let año1927 = document.getElementById('id1927')
 let año1928 = document.getElementById('id1928')
+let año1929 = document.getElementById('id1929')
+let año1930 = document.getElementById('id1930')
+let año1940 = document.getElementById('id1940')
+let año1958 = document.getElementById('id1958')
+let año1960 = document.getElementById('id1960')
+let año1974 = document.getElementById('id1974')
+let año2002 = document.getElementById('id2002')
 año1927.addEventListener('click', ScrollFunction)
 año1928.addEventListener('click', ScrollFunction)
+año1929.addEventListener('click', ScrollFunction)
+año1930.addEventListener('click', ScrollFunction)
+año1940.addEventListener('click', ScrollFunction)
+año1958.addEventListener('click', ScrollFunction)
+año1960.addEventListener('click', ScrollFunction)
+año1974.addEventListener('click', ScrollFunction)
+año2002.addEventListener('click', ScrollFunction)
 
 function ScrollFunction() {
     setTimeout(() => {
