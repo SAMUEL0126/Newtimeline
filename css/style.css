@@ -730,6 +730,8 @@ ol {
 .contInputSearch .inputHidden {
   height: 40px;
   width: 0;
+  border-radius: 20px;
+  transition: 0.8s;
   visibility: hidden;
 }
 
@@ -743,4 +745,29 @@ ol {
   padding: 10px;
   visibility: visible;
   transition: 0.8s;
+}
+
+/*Btn Search*/
+
+.contInputSearch .Btnhidden {
+  height: 40px;
+  width: 0;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  visibility: hidden;
+  transition: 0.8s;
+  overflow: hidden;
+}
+.Btnvisible {
+  background-color: red;
+  color: white;
+  height: 40px;
+  width: 70px;
+  border: none;
+  border-radius: 20px;
+  visibility: visible;
+  transition: 0.8s;
+  overflow: hidden;
 }

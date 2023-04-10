@@ -151,8 +151,13 @@ window.addEventListener('load', () => {
 let BtnOpenSearch = document.getElementById('BtnOpenSearch')
 BtnOpenSearch.addEventListener('click', openInput)
 
+
 function openInput() {
     let searchBox = document.getElementById('searchBox')
-    searchBox.classList.remove('inputHidden')
-    searchBox.classList.add('inputYearSearch')
+    searchBox.classList.toggle('inputHidden')
+    searchBox.classList.toggle('inputYearSearch')
+
+    let BtnBuscar = document.getElementById('BtnBuscar')
+    BtnBuscar.classList.toggle('Btnhidden')
+    BtnBuscar.classList.toggle('Btnvisible')
 }
