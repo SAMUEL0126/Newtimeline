@@ -189,5 +189,14 @@ function valueInput() {
         optionTwo.classList.add('selected')
         optionTwo2.classList.add('selected')   
     }
+    else {
+        Swal.fire({
+            title: 'Sweet!',
+            text: 'Modal with a custom image.',
+            imageWidth: 200,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          })
+    }
 
 }
