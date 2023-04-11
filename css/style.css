@@ -800,3 +800,9 @@ ol {
   overflow: hidden;
   cursor: pointer;
 }
+
+
+/*ALERTAS===================  */
+.custom-button {
+  border-radius: 50px !important;
+}

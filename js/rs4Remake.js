@@ -191,12 +191,16 @@ function valueInput() {
     }
     else {
         Swal.fire({
-            title: 'Sweet!',
-            text: 'Modal with a custom image.',
+            title: 'Oops!',
+            text: 'El año que haz escrito no se encuentra en nuestra linea del tiempo.',
+            confirmButtonColor: 'red',
             imageWidth: 200,
             imageHeight: 200,
             imageAlt: 'Custom image',
-          })
+            customClass: {
+                confirmButton: 'custom-button',
+            },
+        })
     }
 
 }
