@@ -165,9 +165,29 @@ function openInput() {
 let BtnBuscar = document.getElementById('BtnBuscar')
 BtnBuscar.addEventListener('click', valueInput)
 
+/* obtener y comparar valor del input */
 function valueInput() {
+    let OptionOne = document.getElementById('OptionOne')
+
     let searchBox = document.getElementById('searchBox')
     console.log(searchBox.value);
     let id1927 = document.getElementById('id1927')
-    console.log(id1927);
+    console.log(id1927.textContent);
+    let optionTwo = document.getElementById('optionTwo')
+    let optionTwo2 = document.getElementById('optionTwo2')
+    let OptionOneInter = document.getElementById('OptionOneInter')
+
+    /* selected for 1927 */
+    if (searchBox.value == id1927.textContent) {
+        let instrucciones = document.getElementById('instrucciones')
+        instrucciones.classList.remove('selected')
+        OptionOne.classList.remove('selected')
+        OptionOneInter.classList.remove('selected')
+
+        id1927.classList.add('selected')
+        optionTwo.classList.remove('optionTwo')
+        optionTwo.classList.add('selected')
+        optionTwo2.classList.add('selected')   
+    }
+
 }

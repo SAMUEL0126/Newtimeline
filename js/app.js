@@ -152,6 +152,9 @@ $(document).ready(function($){
 			visibleContent = eventsContent.find('.selected'),
 			selectedContent = eventsContent.find('[data-date="'+ eventDate +'"]'),
 			selectedContentHeight = selectedContent.height();
+			console.log(eventDate);
+		
+		// let BtnBuscar = document.getElementById('BtnBuscar')
 
 		if (selectedContent.index() > visibleContent.index()) {
 			var classEnetering = 'selected enter-right',
