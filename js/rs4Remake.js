@@ -170,12 +170,17 @@ function valueInput() {
     let OptionOne = document.getElementById('OptionOne')
 
     let searchBox = document.getElementById('searchBox')
-    console.log(searchBox.value);
+
+    // ids 
     let id1927 = document.getElementById('id1927')
+    let id1928 = document.getElementById('id1928')
     console.log(id1927.textContent);
     let optionTwo = document.getElementById('optionTwo')
     let optionTwo2 = document.getElementById('optionTwo2')
     let OptionOneInter = document.getElementById('OptionOneInter')
+
+    let OptionThree = document.getElementById('OptionThree')
+    let OptionThree2 = document.getElementById('OptionThree2')
 
     /* selected for 1927 */
     if (searchBox.value == id1927.textContent) {
@@ -183,19 +188,39 @@ function valueInput() {
         instrucciones.classList.remove('selected')
         OptionOne.classList.remove('selected')
         OptionOneInter.classList.remove('selected')
+        id1928.classList.remove('selected')
+        OptionThree.classList.remove('selected')
+        OptionThree2.classList.remove('selected')
 
         id1927.classList.add('selected')
         optionTwo.classList.remove('optionTwo')
         optionTwo.classList.add('selected')
         optionTwo2.classList.add('selected')   
     }
+    else if (searchBox.value == id1928.textContent) {
+        let instrucciones = document.getElementById('instrucciones')
+        instrucciones.classList.remove('selected')
+
+        OptionOne.classList.remove('selected')
+        OptionOneInter.classList.remove('selected')
+
+        id1928.classList.add('selected')
+        OptionThree.classList.remove('OptionThree')
+        OptionThree.classList.add('selected')
+        OptionThree2.classList.add('selected')
+
+        // remove
+        id1927.classList.remove('selected')
+        optionTwo.classList.remove('selected')
+        optionTwo2.classList.remove('selected')
+    }
     else {
         Swal.fire({
             title: 'Oops!',
             text: 'El año que haz escrito no se encuentra en nuestra linea del tiempo.',
             confirmButtonColor: 'red',
-            imageWidth: 200,
-            imageHeight: 200,
+            width: 400,
+            icon: 'error',
             imageAlt: 'Custom image',
             customClass: {
                 confirmButton: 'custom-button',

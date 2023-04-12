@@ -170,6 +170,22 @@ body{
   border-radius: 15px;
   display: flex;
 }
+#OptionThree {
+  background-color: transparent;
+  border: solid;
+  color: white;
+  width: 45%;
+  border-radius: 15px;
+  display: flex;
+}
+#OptionThree2 {
+  background-color: transparent;
+  border: solid;
+  color: white;
+  width: 45%;
+  border-radius: 15px;
+  display: flex;
+}
 
 .contTittleImg {
   width: 50%;
