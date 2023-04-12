@@ -202,6 +202,22 @@ body{
   border-radius: 15px;
   display: flex;
 }
+#OptionFive {
+  background-color: transparent;
+  border: solid;
+  color: white;
+  width: 45%;
+  border-radius: 15px;
+  display: flex;
+}
+#OptionFive2 {
+  background-color: transparent;
+  border: solid;
+  color: white;
+  width: 45%;
+  border-radius: 15px;
+  display: flex;
+}
 .contTittleImg {
   width: 50%;
   height: 100%;

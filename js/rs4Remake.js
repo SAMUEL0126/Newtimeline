@@ -175,6 +175,7 @@ function valueInput() {
     let id1927 = document.getElementById('id1927')
     let id1928 = document.getElementById('id1928')
     let id1929 = document.getElementById('id1929')
+    let id1938 = document.getElementById('id1930')
 
     // console.log(id1927.textContent);
 
@@ -187,6 +188,9 @@ function valueInput() {
 
     let OptionFour = document.getElementById('OptionFour')
     let OptionFour2 = document.getElementById('OptionFour2')
+
+    let OptionFive = document.getElementById('OptionFive')
+    let OptionFive2 = document.getElementById('OptionFive2')
 
     /* selected for 1927 */
     if (searchBox.value == id1927.textContent) {
@@ -204,7 +208,9 @@ function valueInput() {
         optionTwo.classList.add('selected')
         optionTwo2.classList.add('selected')
         OptionFour.classList.remove('selected')
-        OptionFour2.classList.remove('selected')   
+        OptionFour2.classList.remove('selected') 
+        OptionFive.classList.remove('selected')
+        OptionFive2.classList.remove('selected')  
     }
     /* select for 1928 */
     else if (searchBox.value == id1928.textContent) {
@@ -251,6 +257,34 @@ function valueInput() {
         OptionThree.classList.remove('selected')
         OptionThree2.classList.remove('selected')
 
+    }
+    /* select for 1938 */
+    else if (searchBox.value == id1938.textContent) {
+
+        let instrucciones = document.getElementById('instrucciones')
+        instrucciones.classList.remove('selected')
+
+        OptionOne.classList.remove('selected')
+        OptionOneInter.classList.remove('selected')
+
+        // add
+        id1938.classList.add('selected')
+        OptionFive.classList.remove('OptionFive')
+        OptionFive.classList.add('selected')
+        OptionFive2.classList.add('selected')
+
+        // remove
+        id1927.classList.remove('selected')
+        optionTwo.classList.remove('selected')
+        optionTwo2.classList.remove('selected')
+
+        id1928.classList.remove('selected')
+        OptionThree.classList.remove('selected')
+        OptionThree2.classList.remove('selected')
+
+        id1929.classList.remove('selected')
+        OptionFour.classList.remove('selected')
+        OptionFour2.classList.remove('selected')
     }
     else {
         Swal.fire({
