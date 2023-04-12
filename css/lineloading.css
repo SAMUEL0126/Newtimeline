@@ -1,8 +1,14 @@
-body{
+* {
+    font-family: 'Tillana';
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background: #1d2630;
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -11,14 +17,14 @@ body{
     flex-direction: column;
 }
 
-.text{
+.text {
     color: white;
     margin-bottom: 25px;
     font-size: 20px;
     letter-spacing: 2px;
 }
 
-.loading{
+.loading {
     width: 100%;
     height: auto;
     display: flex;
@@ -26,7 +32,7 @@ body{
     align-items: center;
 }
 
-.loading .line-box{
+.loading .line-box {
     padding: 2px;
     width: 40%;
     height: 20px;
@@ -34,18 +40,19 @@ body{
     border-radius: 20px;
 }
 
-.loading .line-box .line{
+.loading .line-box .line {
     height: 20px;
     border-radius: 20px;
-    background: #67D295;
-    animation: loading 5s forwards cubic-bezier(0,0,0,0);
+    background: red;
+    animation: loading 5s forwards cubic-bezier(0, 0, 0, 0);
 }
 
 @keyframes loading {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 100%;
     }
 }
