@@ -20,9 +20,13 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
 .contPageTransitionClock {
   width: 100%;
-  height: 100%;
+  height: 156vh;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +34,30 @@ body{
   background: #acbaca;
   flex-direction: column;
   gap: 20px;
+  z-index: 100;
+  position: fixed;
+  transition: 1.3s ease;
+  visibility: hidden;
 }
+.contPageTransitionClockVisible {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #acbaca;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 100;
+  position: fixed;
+  transition: 1.3s ease;
+  visibility: visible;
+  animation: anima;
+}
+
 
 .contTime {
   width: 95%;
@@ -880,11 +907,8 @@ ol {
   background: #acbaca;
   flex-direction: column;
   gap: 20px;
-  z-index: 100;
-  position: fixed;
-  /* display: none; */
-  /* visibility: hidden; */
 }
+
 
 
 .clock{
