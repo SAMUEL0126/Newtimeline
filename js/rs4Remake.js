@@ -286,6 +286,18 @@ function valueInput() {
         OptionFour.classList.remove('selected')
         OptionFour2.classList.remove('selected')
     }
+    else if (searchBox.value == '') {
+        Swal.fire({
+            title: 'Oops!',
+            text: 'Debes ingresar un año en el buscador para consultar la historia de dicha epoca.',
+            confirmButtonColor: 'red',
+            icon: 'question',
+            width: 500,
+            customClass: {
+                confirmButton: 'custom-button',
+            }
+        })
+    }
     else {
         Swal.fire({
             title: 'Oops!',
@@ -296,7 +308,7 @@ function valueInput() {
             imageAlt: 'Custom image',
             customClass: {
                 confirmButton: 'custom-button',
-            },
+            }
         })
     }
 
