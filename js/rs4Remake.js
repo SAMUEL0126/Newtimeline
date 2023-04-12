@@ -174,13 +174,19 @@ function valueInput() {
     // ids 
     let id1927 = document.getElementById('id1927')
     let id1928 = document.getElementById('id1928')
-    console.log(id1927.textContent);
+    let id1929 = document.getElementById('id1929')
+
+    // console.log(id1927.textContent);
+
     let optionTwo = document.getElementById('optionTwo')
     let optionTwo2 = document.getElementById('optionTwo2')
     let OptionOneInter = document.getElementById('OptionOneInter')
 
     let OptionThree = document.getElementById('OptionThree')
     let OptionThree2 = document.getElementById('OptionThree2')
+
+    let OptionFour = document.getElementById('OptionFour')
+    let OptionFour2 = document.getElementById('OptionFour2')
 
     /* selected for 1927 */
     if (searchBox.value == id1927.textContent) {
@@ -192,11 +198,15 @@ function valueInput() {
         OptionThree.classList.remove('selected')
         OptionThree2.classList.remove('selected')
 
+        // remove 
         id1927.classList.add('selected')
         optionTwo.classList.remove('optionTwo')
         optionTwo.classList.add('selected')
-        optionTwo2.classList.add('selected')   
+        optionTwo2.classList.add('selected')
+        OptionFour.classList.remove('selected')
+        OptionFour2.classList.remove('selected')   
     }
+    /* select for 1928 */
     else if (searchBox.value == id1928.textContent) {
         let instrucciones = document.getElementById('instrucciones')
         instrucciones.classList.remove('selected')
@@ -204,6 +214,7 @@ function valueInput() {
         OptionOne.classList.remove('selected')
         OptionOneInter.classList.remove('selected')
 
+        // add 
         id1928.classList.add('selected')
         OptionThree.classList.remove('OptionThree')
         OptionThree.classList.add('selected')
@@ -211,8 +222,35 @@ function valueInput() {
 
         // remove
         id1927.classList.remove('selected')
+        id1929.classList.remove('selected')
         optionTwo.classList.remove('selected')
         optionTwo2.classList.remove('selected')
+        OptionFour.classList.remove('selected')
+        OptionFour2.classList.remove('selected')
+    }
+    /* select for 1929 */
+    else if (searchBox.value == id1929.textContent) {
+        let instrucciones = document.getElementById('instrucciones')
+        instrucciones.classList.remove('selected')
+
+        OptionOne.classList.remove('selected')
+        OptionOneInter.classList.remove('selected')
+
+        // add 
+        id1929.classList.add('selected')
+        OptionFour.classList.remove('OptionFour')
+        OptionFour.classList.add('selected')
+        OptionFour2.classList.add('selected')
+
+        // remove
+        id1927.classList.remove('selected')
+        optionTwo.classList.remove('selected')
+        optionTwo2.classList.remove('selected')
+
+        id1928.classList.remove('selected')
+        OptionThree.classList.remove('selected')
+        OptionThree2.classList.remove('selected')
+
     }
     else {
         Swal.fire({
