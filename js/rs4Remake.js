@@ -237,49 +237,89 @@ function valueInput() {
     }
     /* select for 1928 */
     else if (searchBox.value == id1928.textContent) {
-        let instrucciones = document.getElementById('instrucciones')
-        instrucciones.classList.remove('selected')
 
-        OptionOne.classList.remove('selected')
-        OptionOneInter.classList.remove('selected')
+        transitionclock.classList.toggle('contPageTransitionClock')
+        transitionclock.classList.toggle('contPageTransitionClockVisible')
+        line.classList.toggle('line')
 
-        // add 
-        id1928.classList.add('selected')
-        OptionThree.classList.remove('OptionThree')
-        OptionThree.classList.add('selected')
-        OptionThree2.classList.add('selected')
+        setTimeout(() => {
+            line.classList.toggle('line')
+        }, 8000);
 
-        // remove
-        id1927.classList.remove('selected')
-        id1929.classList.remove('selected')
-        optionTwo.classList.remove('selected')
-        optionTwo2.classList.remove('selected')
-        OptionFour.classList.remove('selected')
-        OptionFour2.classList.remove('selected')
+        setTimeout(() => {
+            transitionclock.classList.toggle('contPageTransitionClockVisible')
+            transitionclock.classList.toggle('contPageTransitionClock')
+        }, 5000);
+
+        setTimeout(() => {
+            ScrollFunction()
+            let instrucciones = document.getElementById('instrucciones')
+            instrucciones.classList.remove('selected')
+
+            OptionOne.classList.remove('selected')
+            OptionOneInter.classList.remove('selected')
+
+            // add 
+            id1928.classList.add('selected')
+            OptionThree.classList.remove('OptionThree')
+            OptionThree.classList.add('selected')
+            OptionThree2.classList.add('selected')
+
+            // remove
+            id1927.classList.remove('selected')
+            id1929.classList.remove('selected')
+            optionTwo.classList.remove('selected')
+            optionTwo2.classList.remove('selected')
+            OptionFour.classList.remove('selected')
+            OptionFour2.classList.remove('selected')
+        }, 5000);
+
     }
     /* select for 1929 */
     else if (searchBox.value == id1929.textContent) {
-        let instrucciones = document.getElementById('instrucciones')
-        instrucciones.classList.remove('selected')
 
-        OptionOne.classList.remove('selected')
-        OptionOneInter.classList.remove('selected')
+        transitionclock.classList.toggle('contPageTransitionClock')
+        transitionclock.classList.toggle('contPageTransitionClockVisible')
+        line.classList.toggle('line')
 
-        // add 
-        id1929.classList.add('selected')
-        OptionFour.classList.remove('OptionFour')
-        OptionFour.classList.add('selected')
-        OptionFour2.classList.add('selected')
+        setTimeout(() => {
+            line.classList.toggle('line')
+        }, 8000);
 
-        // remove
-        id1927.classList.remove('selected')
-        optionTwo.classList.remove('selected')
-        optionTwo2.classList.remove('selected')
+        setTimeout(() => {
+            transitionclock.classList.toggle('contPageTransitionClockVisible')
+            transitionclock.classList.toggle('contPageTransitionClock')
+        }, 5000);
 
-        id1928.classList.remove('selected')
-        OptionThree.classList.remove('selected')
-        OptionThree2.classList.remove('selected')
+        setTimeout(() => {
+            ScrollFunction()
+            let instrucciones = document.getElementById('instrucciones')
+            instrucciones.classList.remove('selected')
 
+            OptionOne.classList.remove('selected')
+            OptionOneInter.classList.remove('selected')
+
+            // add 
+            id1929.classList.add('selected')
+            OptionFour.classList.remove('OptionFour')
+            OptionFour.classList.add('selected')
+            OptionFour2.classList.add('selected')
+
+            // remove
+            id1927.classList.remove('selected')
+            optionTwo.classList.remove('selected')
+            optionTwo2.classList.remove('selected')
+
+            id1928.classList.remove('selected')
+            OptionThree.classList.remove('selected')
+            OptionThree2.classList.remove('selected')
+
+            id1938.classList.remove('selected')
+            OptionFive.classList.remove('selected')
+            OptionFive2.classList.remove('selected')
+
+        }, 5000);
+        
     }
     /* select for 1938 */
     else if (searchBox.value == id1938.textContent) {
